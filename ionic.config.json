@@ -1,7 +1,8 @@
 {
   "name": "ecomm-app",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

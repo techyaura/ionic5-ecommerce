@@ -46,6 +46,10 @@ export class AppComponent implements OnInit {
     this.router.navigate([path]);
   }
 
+  logout(): void{
+    // add logout session logic
+  }
+
   close() {
     menuController.toggle();
   }
