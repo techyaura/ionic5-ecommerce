@@ -18,29 +18,31 @@
   <h1 class="title">Profile</h1>
 
   <div class="profile-info">
-    <ion-item>
-      <ion-label position="floating">Name</ion-label>
-      <ion-input value="Code Crafts"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Address Lane</ion-label>
-      <ion-input value="37/6 A"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">City</ion-label>
-      <ion-input value="Moratuwa"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Gender</ion-label>
-      <ion-input value="Male"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input value="info@codecrafts.net"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Phone Number</ion-label>
-      <ion-input value="+94 775 580 646"></ion-input>
-    </ion-item>
+    <form [formGroup]="formGrp" (ngSubmit)="save">
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Address Lane</ion-label>
+        <ion-input formControlName="address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input formControlName="city"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Gender</ion-label>
+        <ion-input formControlName="gender"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input formControlName="phone"></ion-input>
+      </ion-item>
+    </form>
   </div>
 </ion-content>
