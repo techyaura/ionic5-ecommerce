@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { UtilService } from './services/util/util.service';
 import { menuController } from '@ionic/core';
 import { Router } from '@angular/router';
+import { UtilService } from './services/util/util.service';
+import { StorageService } from './services/storage/storage.service';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
     private statusBar: StatusBar,
     private util: UtilService,
     private router: Router,
+    private storageService: StorageService
   ) {
     this.initializeApp();
   }
@@ -47,7 +49,7 @@ export class AppComponent implements OnInit {
   }
 
   logout(): void{
-    // add logout session logic
+    this.storageService.clear();
   }
 
   close() {

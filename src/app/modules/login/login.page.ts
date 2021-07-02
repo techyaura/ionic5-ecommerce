@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { UtilService } from '../../services/util/util.service';
-
+import { UtilService, StorageService } from '../../services';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -10,12 +9,12 @@ import { UtilService } from '../../services/util/util.service';
 export class LoginPage implements OnInit {
 
   constructor(
+    private storageService: StorageService,
     private util: UtilService,
     private navCtrl: NavController, 
   ) { }
 
-  ngOnInit() {
-  }
+  async ngOnInit() {}
 
   login() {
     // Enabling Side Menu

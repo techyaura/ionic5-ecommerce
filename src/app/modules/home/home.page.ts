@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../services/data/data.service';
-
+import { DataService, StorageService } from '../../services';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -13,9 +12,10 @@ export class HomePage implements OnInit {
 
   constructor(
     private data: DataService,
+    private storageService: StorageService
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.categories = this.data.getCategories();
     this.featuredProducts = this.data.getFeaturedProducts();
     this.bestSellProducts = this.data.getBestSellProducts();
