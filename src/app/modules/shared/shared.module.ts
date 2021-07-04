@@ -5,7 +5,7 @@ import { StorageService } from '../../services/storage/storage.service';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class SharedModule {

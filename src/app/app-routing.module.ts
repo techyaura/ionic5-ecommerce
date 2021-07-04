@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'confirm',
     loadChildren: () => import('./modules/confirm/confirm.module').then( m => m.ConfirmPageModule)
+  },
+  {
+    path: 'categories-list',
+    loadChildren: () => import('./modules/categories-list/categories-list.module').then( m => m.CategoriesListPageModule)
   }
 ];
 
