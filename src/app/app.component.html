@@ -3,6 +3,9 @@
     <ion-menu contentId="main-content" type="overlay" [disabled]="!isMenuEnabled">
       <ion-content>
         <div class="main-list">
+          <ion-button fill="clear" color="dark" (click)="close()">
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </ion-button>
           <ion-list id="inbox-list">
 
             <ion-menu-toggle auto-hide="false">
@@ -44,9 +47,9 @@
           </ion-list>
 
           <!-- Close Button -->
-          <ion-button fill="clear" color="dark" (click)="close()">
+          <!-- <ion-button fill="clear" color="dark" (click)="close()">
             <ion-icon name="close-circle-outline"></ion-icon>
-          </ion-button>
+          </ion-button> -->
         </div>
       </ion-content>
     </ion-menu>

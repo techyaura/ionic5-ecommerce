@@ -24,9 +24,12 @@ ion-menu {
 
   ion-button {
     position: absolute;
-    bottom: 10%;
-    right: 10%;
-    font-size: 24px;
-    --ripple-color: transparent;
+    // bottom: 10%;
+    // right: 10%;
+    // font-size: 24px;
+    // --ripple-color: transparent;
+    // position: absolute;
+    top: 2%;
+    right: 0;
   }
 }
