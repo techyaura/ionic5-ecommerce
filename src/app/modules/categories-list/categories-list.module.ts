@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { CommonFeaturesModule } from '../common/common-features.module';
+
 import { CategoriesListPageRoutingModule } from './categories-list-routing.module';
 
 import { CategoriesListPage } from './categories-list.page';
@@ -13,6 +15,7 @@ import { CategoriesListPage } from './categories-list.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    CommonFeaturesModule,
     CategoriesListPageRoutingModule
   ],
   declarations: [CategoriesListPage]

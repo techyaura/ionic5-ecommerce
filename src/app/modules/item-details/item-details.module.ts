@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
+import { CommonFeaturesModule } from '../common/common-features.module';
 
 import { ItemDetailsPageRoutingModule } from './item-details-routing.module';
 
@@ -13,6 +14,7 @@ import { ItemDetailsPage } from './item-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    CommonFeaturesModule,
     ItemDetailsPageRoutingModule
   ],
   declarations: [ItemDetailsPage]

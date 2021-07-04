@@ -1,18 +1,23 @@
 <ion-header>
   <ion-toolbar>
+    
     <ion-buttons slot="start">
-      <ion-menu-button>
+      <ion-button *ngIf="isShowBack" color="primary" class="backbtn" (click)="navigateToPage()">
+        <img src="../../assets/back-dark.svg" />
+      </ion-button>
+      <ion-menu-button *ngIf="isShowMenu">
         <img src="../../assets/menu_bar.svg" />
       </ion-menu-button>
     </ion-buttons>
-    <!-- <ion-buttons slot="end">
-      <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-        <span>&nbsp;</span>
+
+    <ion-buttons slot="end">
+      <ion-button *ngIf="isShowSearch">
+        <ion-icon name="search-outline" color="dark"></ion-icon>
       </ion-button>
-      <ion-button class="filter">
+      <app-notification *ngIf="isShowNotification"></app-notification>
+      <ion-button class="filter" *ngIf="isShowFilter">
         <ion-icon name="funnel-outline" color="dark"></ion-icon>
       </ion-button>
-    </ion-buttons> -->
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>

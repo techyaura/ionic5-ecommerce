@@ -1,22 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button color="primary" class="backbtn" routerLink="/home" routerDirection="back">
-        <img src="../../assets/back-dark.svg" />
-      </ion-button>
-    </ion-buttons>
-
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="search-outline" color="dark"></ion-icon>
-      </ion-button>
-      <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-        <span>&nbsp;</span>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header [buttons]="['BACK', 'NOTIFICATION']" [route]="'/home'"></app-header>
 
 <ion-content>
   <ion-slides pager="true" class="product-slider">

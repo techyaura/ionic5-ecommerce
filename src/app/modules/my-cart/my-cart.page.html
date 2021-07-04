@@ -1,18 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-buttons class="backbtn" routerLink="/home" routerDirection="back">
-        <img src="../../assets/back-dark.svg" />
-      </ion-buttons>
-    </ion-buttons>
-
-    <ion-buttons slot="end">
-      <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header [buttons]="['BACK', 'NOTIFICATION']" [route]="'/home'"></app-header>
 
 <ion-content fullscreen="true">
   <h1 class="title">Cart</h1>
